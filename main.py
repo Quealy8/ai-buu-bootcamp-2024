@@ -31,7 +31,7 @@ ACCESS_TOKEN = os.getenv("LINE_ACCESS_TOKEN", "O0Vi8xE7Wh3A6BahSUC6O0VKR7RxR0p27
 CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET", "701c99f9fa1b4d0261e6f4dedcce76c8")
 
 # ข้อมูล Gemini api key
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBrn9N8g0RnZrYhW-vFe3Tb2ytibKcsU3E")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyA75-HW4XpF6JlDrmRuiZdLVQW5tjQRjBM")
 
 # การเชื่อมต่อ และตั้งค่าข้อมูลเพื่อเรียกใช้งาน LINE Messaging API
 configuration = Configuration(access_token=ACCESS_TOKEN)
@@ -240,8 +240,8 @@ gemini = GeminiRAGSystem(
 async def lifespan(app: FastAPI):
     # ข้อมูลตัวอย่างที่ใช้สำหรับ Gemini
     sample_documents = [
-        "จิรภัทร ทำดี คือ ชายหนุ่มที่มีความสามารถในการเขียนโปรแกรมที่มาจากบริษัท ClickNext ที่เป็นบริษัทด้านการพัฒนาโปรแกรมที่มีชื่อเสียง",
-        "จิรภัทร ทำดี มีชื่อเล่นว่า ปาล์ม เกิดวันที่ 25 มกราคม 2555 ที่จังหวัดสระบุรี ศึกษาจบจากมหาวิทยาลัยบูรพา สาขาวิศวกรรมคอมพิวเตอร์",
+        "ศุภณัฐ อินทร์คง คือ นักศึกษาจากสาขา CS คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา",
+        "ศุภณัฐ อินทร์คง มีชื่อเล่นว่า บาส เกิดวันที่ 8 มกราคม 2547 ที่จังหวัดจันทบุรี ศึกษาอยู่ที่มหาวิทยาลัยบูรพา สาขา CS",
         "งาน BUU-Bootcamp-2024 จัดที่มหาวิทยาลัยบูรพา ในวันที่ 25 มกราคม ปีค.ศ.2024 โดยมีการจัดกิจกรรมต่าง ๆ ที่เกี่ยวข้องกับการพัฒนาซอฟต์แวร์ เวลา 9:00 น. - 16:00 น.",
         "มหาวิทยาลัยบูรพา สาขาวิชาAI ปีการศึกษา 2565 มีนักศึกษาจำนวน 100 คน มีอาจารย์ที่ปรึกษา 10 คน"
     ]
