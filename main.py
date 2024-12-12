@@ -27,8 +27,8 @@ from contextlib import asynccontextmanager
 app = FastAPI()
 
 # ข้อมูล token และ channel secret สำหรับ LINE
-ACCESS_TOKEN = os.getenv("LINE_ACCESS_TOKEN", "O0Vi8xE7Wh3A6BahSUC6O0VKR7RxR0p27jHBl1h39OdH9/d3cEtmrS4QT91BUEDmmrRqLrUiKLVxlJcggXWQ/MwNBJttPBjKEw8Oifg9O06on+Ab3UzbvQ7E8W56z5GeOIHvROzUsRVagavLPiTIbwdB04t89/1O/w1cDnyilFU=")
-CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET", "701c99f9fa1b4d0261e6f4dedcce76c8")
+ACCESS_TOKEN = os.getenv("LINE_ACCESS_TOKEN", "nbHLwqYH9d15r9Knw+zHcYe6ielJDmzPE1DMNMitmfQSbZbHqqCIRPUd93JUV24H+K2d0A2wcDYlCdUZXAOZpG0jzf2pkgdgJAgo8nyJ5SQ/9OhXzSvs58eQacmffpCQ+ZuSR/dpxbRxoilqChOkGQdB04t89/1O/w1cDnyilFU=")
+CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET", "a17ac4a05666159c43cce46b6bdb3a70")
 
 # ข้อมูล Gemini api key
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyA75-HW4XpF6JlDrmRuiZdLVQW5tjQRjBM")
